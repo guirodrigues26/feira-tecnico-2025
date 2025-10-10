@@ -1,2 +1,2 @@
 # feira-tecnico-2025
-Luciana, Guilherme e Clara
+Lorenzo, Mia,  Guilherme e Clara
