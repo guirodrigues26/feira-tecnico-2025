@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
     <title>Formulário - MaPOA</title>
 </head>
 <body>
-    
+    <div class="background-azul">
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="index.html"> MaPOA</a>
+            </div>
+            <ul class="ul">
+                <li> <a href="#">Inicio</a></li>
+                <li> <a href="#">Mapa</a></li>
+                <li> <a href="#">Formulário</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <form id="ini">
+        <p class="q">
+            <label class="ini-input-label" for="1-nome">Nome completo&nbsp;<span class="ob">*</span></label>
+            <input class="ini-input" id="1-nome" type="text" required>
+        </p>
+        
+        <p class="q">
+            <label class="ini-input-label" for="2-escola">Escola&nbsp;<span class="ob">*</span></label>
+            <input class="ini-input" id="2-escola" type="text" name="nome" placeholder="Selecione" required>
+            <!--dropdown-->
+        </p>
+
+        <p class="q">
+            <label class="ini-input-label" for="3-email">Email de matrícula válido&nbsp;<span class="ob">*</span></label>
+            <input class="ini-input" id="3-email" type="text" required>
+        </p>
+
+        <p class="q">
+            <p class="ini-4">Em qual nível de estudo você está?&nbsp;<span class="ob">*</span></p>
+                <div class="ini-radio">
+                    <input class="ini-radio-input" id="4-q1" type="radio" name="4" required>
+                    <label class="ini-radio-label" for="4-q1">Ensino Médio</label>
+                </div>
+                <div class="ini-radio">
+                    <input class="ini-radio-input" id="4-q2" type="radio" name="4" required>
+                    <label class="ini-radio-label" for="4-q2">Ensino Superior</label>
+                </div>
+        </p>
+    </form>
+
+    <hr/>
+
+    <p>a</p>
+</main>
 </body>
 </html>

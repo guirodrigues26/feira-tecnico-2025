@@ -1,0 +1,112 @@
+/****************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none ;
+}
+
+:root{
+    --black: #000000;
+    --azulescuro: #07405b;
+    --laranja: #ff7f2a;
+    --amarelofraco:#FFC83D;
+    --cinzaclaro:#d9d9d9;
+    --cinzaforte:#777777;
+    --branco: #ffffff;
+
+}
+.background-azul{
+    background: var(--azulescuro);
+}
+.container{
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--laranja);
+}
+.ul{
+    display:flex;
+    align-items: center;
+}
+.ul li{
+    margin: 0 35px;
+    font-size:15px;
+}
+.ul li a{
+    color: var(--branco);
+}
+
+/****************************************************/
+
+main {
+    margin: 0 auto;
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#ini {
+    
+}
+
+.ob {
+    color: hsla(0, 100%, 45%);
+}
+
+p.q + p.q {
+    margin-top: 30px;
+}
+
+.ini-input-label, .ini-input, .ini-4 {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.ini-input {
+    width: 100%;
+    height: 35px;
+    padding: 8px;
+}
+
+.ini-radio {
+    display: flex;
+    height: 20px;
+    align-items: center;
+}
+
+.ini-radio:last-of-type {
+    margin-top: 12px;
+}
+
+.ini-radio-input {
+    height: 100%;
+    width: 20px;
+}
+
+.ini-radio-label {
+    margin-left: 8px;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
