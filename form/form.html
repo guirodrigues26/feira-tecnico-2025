@@ -28,12 +28,12 @@
         <div id="pii">
             <fieldset data-pii="1" class="pii-question">
                 <label class="pii-input-label" for="1-nome">Nome completo&nbsp;<span class="ob">*</span></label>
-                <input class="pii-input" id="1-nome" type="text" required>
+                <input name="nome" class="pii-input" id="1-nome" type="text" required>
             </fieldset>
             
             <fieldset data-pii="2" class="pii-question">
                 <label class="pii-input-label" for="2-escola">Escola&nbsp;<span class="ob">*</span></label>
-                <select class="pii-input" id="2-escola" list="escolas" type="text" placeholder="Selecione" required>
+                <select name="escola" class="pii-input" id="2-escola" list="escolas" type="text" placeholder="Selecione" required>
                     <option value="" id="escolas-empty">Selecione...</option>
                     <!--DEIXAR EM ORDEM ALFABÉTICA!!-->
                     <option value="lorem">Escola Municipal Lorem</option>
@@ -58,16 +58,16 @@
 
             <fieldset data-pii="3" class="pii-question">
                 <label class="pii-input-label" for="3-email">Email de matrícula válido&nbsp;<span class="ob">*</span></label>
-                <input class="pii-input" id="3-email" type="text" required>
+                <input name="email" class="pii-input" id="3-email" type="text" required>
             </fieldset>
 
             <fieldset data-pii="4" class="pii-question">
                 <p class="pii-4">Em qual nível de estudo você está?&nbsp;<span class="ob">*</span></p>
-                <div class="pii-radio">
+                <div name="estudo" class="pii-radio">
                     <input class="pii-radio-input" id="4-q1" type="radio" name="4" required>
                     <label class="pii-radio-label" for="4-q1">Ensino Médio</label>
                 </div>
-                <div class="pii-radio">
+                <div name="estudo" class="pii-radio">
                     <input class="pii-radio-input" id="4-q2" type="radio" name="4" required>
                     <label class="pii-radio-label" for="4-q2">Ensino Superior</label>
                 </div>
@@ -75,10 +75,11 @@
             <button id="pii-submit" type="submit">Avançar</button>
             <!--<button id="pii-submit" onclick="piiSubmit()">Avançar</button>-->
 
-            <!--protótipo, esconder isso depois-->
+        <!--protótipo, depois isso vai ser um form-->
         <div id="main-form">
+            <p id="q">Que nota de 0 a 5 estrelas você daria, em sua escola, para:</p>
             <fieldset class="question" data-question="0">
-                <label class="question-label" for="question-0">Escadas</label>
+                <label class="question-label" for="question-0">Qualidade das escadas?</label>
                 <input class="rating" id="question-0" type="range" min="1" max="5" value="0">
                     <div class="rating-stars">
                         <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
@@ -87,10 +88,14 @@
                     <button type="" class="no-stars">Zero estrelas</button>
                     <button type="" class="clear-answer">Limpar</button>
                 </div>
+                <div class="comments">
+                    <label for="comments-0">Comentários adicionais:</label>
+                    <input id="comments-0" type="text">
+                </div>
             </fieldset>
-
+            <hr>
             <fieldset class="question" data-question="1">
-                <label class="question-label" for="question-1">Uniforme</label>
+                <label class="question-label" for="question-1">Qualidade do uniforme?</label>
                 <input class="rating" id="question-1" type="range" min="1" max="5" value="0">
                     <div class="rating-stars">
                         <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
@@ -98,6 +103,26 @@
                 <div class="button-container">
                     <button type="" class="no-stars">Zero estrelas</button>
                     <button type="" class="clear-answer">Limpar</button>
+                </div>
+                <div class="comments">
+                    <label for="comments-1">Comentários adicionais:</label>
+                    <input id="comments-1" type="text">
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="question" data-question="2">
+                <label class="question-label" for="question-2">Qualidade do almoço?</label>
+                <input class="rating" id="question-2" type="range" min="1" max="5" value="0">
+                    <div class="rating-stars">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+                <div class="button-container">
+                    <button type="" class="no-stars">Zero estrelas</button>
+                    <button type="" class="clear-answer">Limpar</button>
+                </div>
+                <div class="comments">
+                    <label for="comments-2">Comentários adicionais:</label>
+                    <input id="comments-2" type="text">
                 </div>
             </fieldset>
         </div>
