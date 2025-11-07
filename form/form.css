@@ -56,6 +56,7 @@ nav{
 main {
     margin: 0 auto;
     display: flex;
+    font-family: 'Poppins', sans-serif;
 }
 
 form {
@@ -145,7 +146,7 @@ fieldset {
 }
 
 #q {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     margin: 30px 0;
     color: #07405b;
@@ -166,11 +167,16 @@ fieldset {
 .rating {
     margin-top: 35px;
     width: 340px;
+    /*opacity: 0;*/
+}
+
+.rating:hover {
+    cursor: pointer;
 }
 
 .rating-stars {
     position: relative;
-    bottom: 46.5px;
+    bottom: 47.5px;
     display: grid;
     width: 400px;
     max-width: 100%;
@@ -213,8 +219,8 @@ fieldset {
     border-left: none;
     border-right: none;
     font-size: 12pt;
-    margin-top: 14px;
-    padding-bottom: 3px;
+    margin-top: 10px;
+    padding-bottom: 4px;
 }
 
 .comments input:focus {
@@ -227,4 +233,13 @@ hr {
     width: 200px;
     border: none;
     border-top: 2px solid #0a8ac5;
+}
+
+.addenda {
+    color: #0f6f9b;
+    font-style: italic;
+}
+
+.addenda + .addenda {
+    margin-top: 10px;
 }
